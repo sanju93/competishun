@@ -3,6 +3,7 @@ import { Box,Button,AppBar,Toolbar,Typography ,IconButton} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import { useEffect, useState} from "react";
 import Context from "../context/context";
+import { toast } from "react-toastify";
 function NavBar(){
 
    let [login,setLogin] = useState(false);
@@ -29,6 +30,7 @@ function NavBar(){
       localStorage.removeItem('login');
       setLogin(!login);
       navigate('/login');
+      toast.success("Logout Successfully");
    }
 
    return <>

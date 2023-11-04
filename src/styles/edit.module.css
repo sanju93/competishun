@@ -1,0 +1,12 @@
+.container{
+    height: 75vh;
+    width : 85%;
+    position: absolute;
+    left: 8%;
+    top : 15%;
+    border : 1px solid black;
+    background-color: wheat;
+    border-radius: 10%;
+    transition:  all 0.5s ease-in-out;
+    padding : 5%
+}
