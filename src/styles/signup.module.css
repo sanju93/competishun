@@ -1,0 +1,20 @@
+.SignUp{
+    display: flex;
+    flex-direction: column;
+    width : 50%;
+    margin-left: 26%;
+    margin-top: 5%;
+   
+
+}
+.inside_div{
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.inside_div span{
+    font-size: large;
+    font-weight: 800;
+    margin-top: 4%;
+}
+
