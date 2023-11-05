@@ -53,7 +53,7 @@ function NavBar(){
           
 
          {login ? 
-         
+          
           <Button onClick={handleLogout} color="inherit">Logout</Button>:
           <>
          <NavLink style={{textDecoration : "none", color : "white"}} to = {"/login"}> <Button color="inherit">

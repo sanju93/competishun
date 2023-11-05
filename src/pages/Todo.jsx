@@ -78,6 +78,23 @@ function Todo() {
 
   function handleDelete(i) {
     todo = todo.filter((item, index) => i !== index);
+    if (todo.length === 0){
+      let user = localStorage.getItem('users');
+
+      if (user){
+        user = JSON.parse(user);
+        let login = localStorage.getItem('login');
+        login = JSON.parse(login);
+        user = user.map((item) => {
+          if (item.email === login.email){
+              item.todo = [];
+          }
+          return item;
+        })
+
+        localStorage.setItem('users',JSON.stringify(user));
+      }
+    }
     setTodo(todo);
     toast.success("Todo Deleted Successfully");
   }
